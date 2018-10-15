@@ -1,27 +1,27 @@
 {
   "name": "@writetome51/array-get-adjacent-at",
   "version": "1.0.0",
-  "description": "",
-  "main": "Returns chosen number of adjacent items in array beginning at chosen index",
+  "description": "Returns chosen number of adjacent items in array beginning at chosen index",
+  "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/writetome51/array-non-modifying-getters-basic.git"
+    "url": "git+https://github.com/writetome51/array-get-adjacent-at.git"
   },
   "keywords": [
     "array",
     "manipulation",
-    "return",
+    "get",
     "data"
   ],
   "author": "Steve Thompson",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/writetome51/array-non-modifying-getters-basic/issues"
+    "url": "https://github.com/writetome51/array-get-adjacent-at/issues"
   },
-  "homepage": "https://github.com/writetome51/array-non-modifying-getters-basic#readme",
+  "homepage": "https://github.com/writetome51/array-get-adjacent-at#readme",
   "devDependencies": {
     "@writetome51/arrays-match": "latest"
   },

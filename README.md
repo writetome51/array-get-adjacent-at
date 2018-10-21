@@ -11,8 +11,12 @@ let result = getAdjacentAt(2, 3, arr);
 
 result is [3,4,5]
 
+let result = getAdjacentAt(4, 5, arr);
+
+result is [5, 6, 7, 8, 9]
+
 You can pass a negative index:
 
-result = getAdjacentAt(-2, 2, arr);
+result = getAdjacentAt(-3, 2, arr);
 
-result is [9,10]
+result is [8, 9]

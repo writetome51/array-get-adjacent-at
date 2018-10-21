@@ -1,8 +1,8 @@
 {
   "name": "@writetome51/array-get-adjacent-at",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Returns chosen number of adjacent items in array beginning at chosen index",
-  "main": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,6 +14,9 @@
     "array",
     "manipulation",
     "get",
+    "slice",
+    "adjacent",
+    "items",
     "data"
   ],
   "author": "Steve Thompson",

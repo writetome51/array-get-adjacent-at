@@ -1,6 +1,6 @@
 import { getAdjacentAt } from './getAdjacentAt';
 import { isArray } from 'basic-data-handling/isArray_notArray';
-import { arraysMatch } from '@writetome51/arrays-match/arraysMatch';
+import { arraysMatch } from '@writetome51/arrays-match';
 
 
 let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];

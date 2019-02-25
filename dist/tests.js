@@ -1,12 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var getAdjacentAt_1 = require("./getAdjacentAt");
+var index_1 = require("./index");
 var isArray_notArray_1 = require("basic-data-handling/isArray_notArray");
 var arrays_match_1 = require("@writetome51/arrays-match");
 var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // Test 1: the result must be array, must have 3 items, first item must be 3
 // and third item must be 5:
-var result = getAdjacentAt_1.getAdjacentAt(2, 3, arr);
+var result = index_1.getAdjacentAt(2, 3, arr);
 if (isArray_notArray_1.isArray(result) &&
     result.length === 3 &&
     result[0] === 3 && result[2] === 5)
@@ -15,7 +15,7 @@ else
     console.log('test 1 failed.');
 // Test 2: a negative startingIndex is allowed, as long as (startingIndex + howMany)
 // is not greater than 0.
-result = getAdjacentAt_1.getAdjacentAt(-2, 2, arr);
+result = index_1.getAdjacentAt(-2, 2, arr);
 if (isArray_notArray_1.isArray(result) &&
     result.length === 2 &&
     result[0] === 9)
@@ -26,7 +26,7 @@ else
 // it must trigger error.  If error is triggered, test passes:
 var errorTriggered = false;
 try {
-    result = getAdjacentAt_1.getAdjacentAt(-4, 5, arr);
+    result = index_1.getAdjacentAt(-4, 5, arr);
 }
 catch (e) {
     errorTriggered = true;
@@ -39,7 +39,7 @@ else
 // it must trigger error.  If error is triggered, test passes:
 errorTriggered = false;
 try {
-    result = getAdjacentAt_1.getAdjacentAt(1, 10, arr);
+    result = index_1.getAdjacentAt(1, 10, arr);
 }
 catch (e) {
     errorTriggered = true;
@@ -50,7 +50,7 @@ else
     console.log('test 4 failed.');
 // Test 5: if howMany parameter is 0, it should return empty array:
 errorTriggered = false;
-result = getAdjacentAt_1.getAdjacentAt(-2, 0, arr);
+result = index_1.getAdjacentAt(-2, 0, arr);
 if (isArray_notArray_1.isArray(result) &&
     result.length === 0)
     console.log('test 5 passed');
@@ -59,7 +59,7 @@ else
 // Test 6: if startingIndex is 0, and howMany is entire array length, it should return
 // entire array:
 errorTriggered = false;
-result = getAdjacentAt_1.getAdjacentAt(0, arr.length, arr);
+result = index_1.getAdjacentAt(0, arr.length, arr);
 if (arrays_match_1.arraysMatch(arr, result))
     console.log('test 6 passed');
 else
@@ -67,7 +67,7 @@ else
 // Test 7: if startingIndex is not integer, should trigger error:
 errorTriggered = false;
 try {
-    result = getAdjacentAt_1.getAdjacentAt(1.01, 2, arr);
+    result = index_1.getAdjacentAt(1.01, 2, arr);
 }
 catch (e) {
     errorTriggered = true;

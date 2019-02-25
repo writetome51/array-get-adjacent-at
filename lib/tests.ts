@@ -1,4 +1,4 @@
-import { getAdjacentAt } from './getAdjacentAt';
+import { getAdjacentAt } from './index';
 import { isArray } from 'basic-data-handling/isArray_notArray';
 import { arraysMatch } from '@writetome51/arrays-match';
 

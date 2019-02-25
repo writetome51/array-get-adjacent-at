@@ -1,6 +1,6 @@
 {
   "name": "@writetome51/array-get-adjacent-at",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Returns chosen number of adjacent items in array beginning at chosen index",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

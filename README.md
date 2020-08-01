@@ -5,26 +5,23 @@ Does not modify `array`.  `startingIndex` can be negative or positive.
 
 
 ## Examples
-```
+```js
 let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let result = getAdjacentAt(2, 3, arr);
-// result is [3,4,5]
+getAdjacentAt(2, 3, arr);
+// --> [3,4,5]
 
-let result = getAdjacentAt(4, 5, arr);
-// result is [5, 6, 7, 8, 9]
+getAdjacentAt(4, 5, arr);
+// --> [5, 6, 7, 8, 9]
 
 // You can pass a negative index:
-result = getAdjacentAt(-3, 2, arr);
-// result is [8, 9]
+getAdjacentAt(-3, 2, arr);
+// --> [8, 9]
 ```
 
 ## Installation
 `npm i  @writetome51/array-get-adjacent-at`
 
 ## Loading
-```
-// if using ES5 Javascript:
-var getAdjacentAt = require('@writetome51/array-get-adjacent-at').getAdjacentAt;
-// if using Typescript:
+```js
 import { getAdjacentAt } from '@writetome51/array-get-adjacent-at';
 ```

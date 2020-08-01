@@ -11,8 +11,8 @@ import {errorIfIndex_howMany_orArray_areNotValid}
 export function getAdjacentAt(startingIndex, howMany, array) {
 	errorIfIndex_howMany_orArray_areNotValid(startingIndex, howMany, array);
 	errorIfArrayTooShortToMeetAdjacentItemsRequest(startingIndex, howMany, array.length);
-	if (howMany === 0) return [];
 
+	if (howMany === 0) return [];
 	if (startingIndex + howMany === 0) return arraySlice(startingIndex, array.length, array);
 	else return arraySlice(startingIndex, startingIndex + howMany, array);
 }

@@ -26,26 +26,32 @@ TypeScript version fork of npm package 'array-slice' by Jon Schlinkert:
  THE SOFTWARE.
 
  ******/
+
 // Replace Array.slice() with this:
-export function _arraySlice(start, end, arr) {
-    let len = arr.length;
-    let range = [];
-    start = idx(len, start);
-    end = idx(len, end, len);
-    while (start < end) {
-        range.push(arr[start++]);
-    }
-    return range;
-    function idx(len, pos, end = undefined) {
-        if (pos == null) {
-            pos = end || 0;
-        }
-        else if (pos < 0) {
-            pos = Math.max(len + pos, 0);
-        }
-        else {
-            pos = Math.min(pos, len);
-        }
-        return pos;
-    }
+
+export function arraySlice(start, end, arr) {
+	let len = arr.length;
+	let range = [];
+
+	start = idx(len, start);
+	end = idx(len, end, len);
+
+	while (start < end) {
+		range.push(arr[start++]);
+	}
+	return range;
+
+
+	function idx(len, pos, end = undefined) {
+		if (pos == null) {
+			pos = end || 0;
+		} else if (pos < 0) {
+			pos = Math.max(len + pos, 0);
+		} else {
+			pos = Math.min(pos, len);
+		}
+
+		return pos;
+	}
+
 }

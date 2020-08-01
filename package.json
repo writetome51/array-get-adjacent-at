@@ -1,6 +1,6 @@
 {
   "name": "@writetome51/array-get-adjacent-at",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "Returns chosen number of adjacent items in array beginning at chosen index",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -27,10 +27,11 @@
   },
   "homepage": "https://github.com/writetome51/array-get-adjacent-at#readme",
   "devDependencies": {
-    "@writetome51/arrays-match": "~1.0.5"
+    "@writetome51/arrays-match": "^2.0.0",
+    "@writetome51/is-array-not-array": "^2.0.0"
   },
   "dependencies": {
-    "error-if-index-how-many-or-array-are-not-valid": "~1.0.0",
-    "error-if-array-too-short-to-meet-adjacent-items-request": "~1.0.1"
+    "error-if-index-how-many-or-array-are-not-valid": "^2.0.0",
+    "error-if-array-too-short-to-meet-adjacent-items-request": "^2.0.0"
   }
 }

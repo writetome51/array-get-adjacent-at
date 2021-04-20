@@ -1,5 +1,5 @@
-export declare function getAdjacentAt(
+export declare function getAdjacentAt<T>(
 	startingIndex: number,
 	howMany: number,
-	array: any[]
-): any[];
+	array: T[]
+): T[];

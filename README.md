@@ -1,4 +1,4 @@
-# getAdjacentAt(<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;startingIndex,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;howMany,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array<br>): any[]
+# getAdjacentAt\<T\>(<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;startingIndex,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;howMany,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array: T[]<br>): T[]
 
 Beginning at `startingIndex`, returns `howMany` adjacent items from `array`.  
 Does not modify `array`.  `startingIndex` can be negative or positive.
@@ -7,11 +7,11 @@ Does not modify `array`.  `startingIndex` can be negative or positive.
 ## Examples
 ```js
 let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-getAdjacentAt(2, 3, arr);
-// --> [3,4,5]
+getAdjacentAt(0, 3, arr);
+// --> [1,2,3]
 
-getAdjacentAt(4, 5, arr);
-// --> [5, 6, 7, 8, 9]
+getAdjacentAt(2, 5, arr);
+// --> [3,4,5,6,7]
 
 // You can pass a negative index:
 getAdjacentAt(-3, 2, arr);

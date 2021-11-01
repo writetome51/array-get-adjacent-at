@@ -1,5 +1,5 @@
 /******
-TypeScript version fork of npm package 'array-slice' by Jon Schlinkert:
+Fork of npm package 'array-slice' by Jon Schlinkert:
 
  The MIT License (MIT)
 
@@ -26,7 +26,9 @@ TypeScript version fork of npm package 'array-slice' by Jon Schlinkert:
  THE SOFTWARE.
 
  ******/
-// Replace Array.slice() with this:
+
+// Replace Array.prototype.slice() with this:
+
 export function arraySlice(start, end, arr) {
     let len = arr.length;
     start = idx(len, start);

@@ -1,7 +1,8 @@
 # getAdjacentAt\<T\>(<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;startingIndex,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;howMany,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array: T[]<br>): T[]
 
 Beginning at `startingIndex`, returns `howMany` adjacent items from `array`.  
-Does not modify `array`.  `startingIndex` can be negative or positive.
+Does not modify `array`.  `startingIndex` can be negative or positive  
+Intended as a replacement of Array.prototype.slice() .  It strictly validates args.
 
 
 ## Examples
@@ -16,6 +17,9 @@ getAdjacentAt(2, 5, arr);
 // You can pass a negative index:
 getAdjacentAt(-3, 2, arr);
 // --> [8, 9]
+
+getAdjacentAt(-2, 3, arr); // Requesting one too may items
+//Error: 'the array does not have enough items to fulfill your request'
 ```
 
 ## Installation

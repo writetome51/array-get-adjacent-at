@@ -1,5 +1,5 @@
-export declare function getAdjacentAt<T>(
+export declare const getAdjacentAt: <T>(
 	startingIndex: number,
 	howMany: number,
 	array: T[]
-): T[];
+) => T[];

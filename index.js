@@ -1,4 +1,4 @@
-import {arraySlice} from './privy.js';
+import {getArrFilled} from '@writetome51/get-arr-filled';
 import {validateAdjacentItemsOperationArgs}
 	from '@writetome51/validate-adjacent-items-operation-args';
 
@@ -8,7 +8,7 @@ import {validateAdjacentItemsOperationArgs}
 
 export const getAdjacentAt = (startingIndex, howMany, array) => {
 	validateAdjacentItemsOperationArgs(startingIndex, howMany, array);
+	if (startingIndex < 0) startingIndex += array.length;
 
-	if (startingIndex + howMany === 0) return arraySlice(startingIndex, array.length, array);
-	else return arraySlice(startingIndex, startingIndex + howMany, array);
+	return getArrFilled(howMany, () => array[startingIndex++]);
 }
